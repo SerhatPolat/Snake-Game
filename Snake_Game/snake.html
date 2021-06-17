@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <div id="score">0</div>
+    <button id="restartButton">Restart Game</button>
+    <canvas id="snakeboard" width="400" height="400"></canvas>
+
+    <style>
+      #snakeboard {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        top: 250px;
+      }
+
+      #score {
+        text-align: center;
+        font-size: 140px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #restartButton {
+        width: 120px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+      }
+
+      #restartButton:active {
+        background-color: white;
+        border: 3px solid green;
+        color: black;
+      }
+    </style>
+    <script src="snake.js"></script>
+  </body>
+</html>
